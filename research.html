@@ -147,7 +147,7 @@
 (function(){
   var c=document.querySelector('.carousel'), t=c.querySelector('.track'), n=t.children.length, cnt=c.querySelector('.count'), th=document.querySelectorAll('.thumb');
   var idx=0;
-  function show(i){ idx=i; cnt.textContent=(i+1)+' / '+n; th.forEach(function(b,k){ b.classList.toggle('on', k===i); if(k===i) b.scrollIntoView({block:'nearest', inline:'nearest'}); }); }
+  function show(i){ idx=i; cnt.textContent=(i+1)+' / '+n; th.forEach(function(b,k){ b.classList.toggle('on', k===i); if(k===i){ var s=b.parentNode, l=b.offsetLeft-s.offsetLeft; if(l<s.scrollLeft || l+b.offsetWidth>s.scrollLeft+s.clientWidth) s.scrollTo({left:l-(s.clientWidth-b.offsetWidth)/2, behavior:'smooth'}); } }); }
   function go(i){ i=(i+n)%n; show(i); t.scrollTo({left:i*t.clientWidth, behavior:'smooth'}); }
   c.querySelector('.prev').onclick=function(){ go(idx-1); };
   c.querySelector('.next').onclick=function(){ go(idx+1); };
