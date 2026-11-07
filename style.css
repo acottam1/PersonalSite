@@ -161,6 +161,8 @@ figure.narrow { max-width: 640px; }
 .area { background: var(--soft); border-radius: 10px; padding: 1rem 1.2rem; border-top: 3px solid var(--orange); }
 .area h3 { margin-top: .2rem; }
 .area p { margin: 0; font-size: .97rem; }
+.area-wide { margin: 1rem 0 1.2rem; }
+.area-wide .project-img figure { margin: 0; }
 
 /* funded projects */
 .grants { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
