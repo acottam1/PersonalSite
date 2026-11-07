@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <header class="site-header"><div class="inner">
@@ -22,13 +22,23 @@
 <p class="lede">My research develops digital twins, large-scale models, and AI tools for transportation systems, with safety as the thread that runs through all of it.</p>
 
 <h2>Research areas</h2>
+<div class="project">
+<div class="project-text">
 <h3>1. Transportation digital twins and simulation-based safety evaluation</h3>
 <p>I build digital twins of transportation facilities from field data and use them to evaluate designs and operations before they are built or changed. I developed a stochastic calibration method that matches simulation output to the full distribution of observed behavior rather than to averages, so that models of military entry control facilities reproduce real operational variability. These models are coupled with a full-motion driving simulator and with reinforcement and imitation learning agents that generate adversarial scenarios a hand-written test plan would never produce. We now also build roadway digital twins automatically from LiDAR for virtual curve safety studies.</p>
-<figure class="narrow"><img src="assets/img/driving-simulator.jpg" alt="A participant seated in a full-motion driving simulator with a red motion platform and wraparound monitors, inside a glass enclosure." width="906" height="604" loading="lazy"><figcaption>The full-motion, high-speed driving simulator integrated with our Unreal Engine and CarSim simulation suite.</figcaption></figure>
+</div>
+<div class="project-img"><figure><img src="assets/img/driving-simulator.jpg" alt="A participant seated in a full-motion driving simulator with a red motion platform and wraparound monitors, inside a glass enclosure." width="906" height="604" loading="lazy"><figcaption>Our full-motion, high-speed driving simulator, integrated with an Unreal Engine and CarSim simulation suite.</figcaption></figure></div>
+</div>
+<div class="duo areas2">
+<div class="area">
 <h3>2. Large-scale transportation system modeling with sparse data</h3>
 <p>Agencies manage networks of thousands of miles with sensors on only a fraction of them. My VEMLAN framework imputes volumes for failed freeway sensors, my crowdsourced estimation work recovers statewide traffic volumes and passenger car equivalency factors where no sensors exist, and my team's statewide analysis of probe vehicle composition earned a 2025 TRB Best Overall Paper Award.</p>
+</div>
+<div class="area">
 <h3>3. AI for transportation safety and operations</h3>
 <p>I apply large language models, reinforcement learning, and imitation learning where they change what engineers can do. My team demonstrated zero-shot, open-vocabulary annotation of roadside assets in LiDAR point clouds using large language models, and built an AI Safety Analyst that uses multimodal large language models to make data-driven safety assessment accessible to agencies without specialized staff.</p>
+</div>
+</div>
 
 <h2>Research projects</h2>
 <div class="project">
@@ -61,15 +71,10 @@
 </div>
 
 <h2>Current funded projects</h2>
-<ul class="entries">
-<li><strong>Public Transportation Management and Rural Transit Assistance Program</strong><div class="meta">Alabama Department of Transportation (ALDOT) · Co-PI · Oct 2026 – Sep 2029 · $3.98M</div></li>
-<li><strong>A Data-Driven Comprehensive Action Plan for Multimodal Campus Road Safety</strong><div class="meta">USDOT Safe Streets and Roads for All (SS4A) · Co-PI · Awarded Oct 2026 · $1.09M</div></li>
-<li><strong>Research and Technology to Promote Safety of Commercial Motor Vehicles, Drivers, and Carriers (IDIQ)</strong><div class="meta">Federal Motor Carrier Safety Administration (FMCSA) · Co-PI · Jul 2026 – Jul 2031 · One of twelve teams selected nationally for task orders totaling up to $60M</div></li>
-<li><strong>Safety and Operation Analysis for Rectangular Rapid Flashing Beacon Warrants</strong><div class="meta">USDOT Safe Streets and Roads for All (SS4A) · Co-PI · Mar 2026 – Sep 2028 · $1.05M</div></li>
-<li><strong>Rail Center for Research Enhancing Short-line Transportation (RailCREST)</strong><div class="meta">Federal Railroad Administration (FRA) · Co-PI · Aug 2025 – Jul 2028 · $1.83M</div></li>
-<li><strong>Safe and Efficient Entry Control Points at Military Installations, Phase I</strong><div class="meta">Department of Defense · Research Team Leader · Aug 2023 – present · ~$1.4M</div></li>
-</ul>
+<div class="grants"><div class="grant"><div class="amt">$3.98M</div><strong>Public Transportation Management and Rural Transit Assistance Program</strong><div class="meta">Alabama Department of Transportation (ALDOT)<br>Co-PI · Oct 2026 – Sep 2029</div></div><div class="grant"><div class="amt">$1.09M</div><strong>A Data-Driven Comprehensive Action Plan for Multimodal Campus Road Safety</strong><div class="meta">USDOT Safe Streets and Roads for All (SS4A)<br>Co-PI · Awarded Oct 2026</div></div><div class="grant"><div class="amt">1 of 12</div><strong>Research and Technology to Promote Safety of Commercial Motor Vehicles, Drivers, and Carriers (IDIQ)</strong><div class="meta">Federal Motor Carrier Safety Administration (FMCSA)<br>Co-PI · Jul 2026 – Jul 2031 · Task orders up to $60M</div></div><div class="grant"><div class="amt">$1.05M</div><strong>Safety and Operation Analysis for Rectangular Rapid Flashing Beacon Warrants</strong><div class="meta">USDOT Safe Streets and Roads for All (SS4A)<br>Co-PI · Mar 2026 – Sep 2028</div></div><div class="grant"><div class="amt">$1.83M</div><strong>Rail Center for Research Enhancing Short-line Transportation (RailCREST)</strong><div class="meta">Federal Railroad Administration (FRA)<br>Co-PI · Aug 2025 – Jul 2028</div></div><div class="grant"><div class="amt">~$1.4M</div><strong>Safe and Efficient Entry Control Points at Military Installations, Phase I</strong><div class="meta">Department of Defense<br>Research Team Leader · Aug 2023 – present</div></div></div>
 
+<div class="cols2">
+<div>
 <h2>Awards and fellowships</h2>
 <ul class="entries">
 <li>TRB Committee on Highway Traffic Monitoring (ACP70) Best Overall Paper Award, 2025</li>
@@ -78,16 +83,40 @@
 <li>Dwight David Eisenhower Transportation Fellowship, 2021 – 2022</li>
 <li>GAANN Fellowship, 2019 – 2022</li>
 </ul>
-
+</div>
+<div>
 <h2>Professional service</h2>
 <ul class="entries">
 <li>Member, TRB Standing Committee on Intelligent Transportation Systems (ACP15), 2025; Paper Review Coordinator, 2024 – 2025</li>
 <li>Friend of TRB committees on Artificial Intelligence and Advanced Computing Applications (AED50) and Information Systems and Technology (AED30)</li>
 <li>Reviewer for <em>Transportation Research Record</em>, <em>Transportation Research Part A</em>, <em>Journal of Transportation Engineering, Part A</em>, and the TRB Annual Meeting</li>
 </ul>
+</div>
+</div>
 
 <h2>Conference photos</h2>
-<div class="gallery"><a href="assets/img/conferences/conf-01.jpg"><img src="assets/img/conferences/conf-01.jpg" alt="Adrian presenting at a podium at a conference session." width="650" height="867" loading="lazy"></a><a href="assets/img/conferences/conf-02.jpg"><img src="assets/img/conferences/conf-02.jpg" alt="A full conference session audience watching a presentation." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-03.jpg"><img src="assets/img/conferences/conf-03.jpg" alt="Adrian standing beside his research poster." width="500" height="664" loading="lazy"></a><a href="assets/img/conferences/conf-04.jpg"><img src="assets/img/conferences/conf-04.jpg" alt="Adrian in front of the large TRB letters at the Annual Meeting." width="650" height="490" loading="lazy"></a><a href="assets/img/conferences/conf-05.jpg"><img src="assets/img/conferences/conf-05.jpg" alt="Adrian discussing his poster with a conference attendee." width="500" height="375" loading="lazy"></a><a href="assets/img/conferences/conf-06.jpg"><img src="assets/img/conferences/conf-06.jpg" alt="A group of colleagues in front of the TRB letters at the Annual Meeting." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-07.jpg"><img src="assets/img/conferences/conf-07.jpg" alt="Adrian presenting the SMART Tool on stage, slide titled &#x27;How does the SMART Tool work?&#x27;." width="1100" height="625" loading="lazy"></a><a href="assets/img/conferences/conf-08.jpg"><img src="assets/img/conferences/conf-08.jpg" alt="University of Arizona team at an exhibit booth with laptops and posters." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-09.jpg"><img src="assets/img/conferences/conf-09.jpg" alt="Adrian beside his research poster at the TRB Annual Meeting." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-10.jpg"><img src="assets/img/conferences/conf-10.jpg" alt="Four colleagues standing in front of the TRB letters." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-11.jpg"><img src="assets/img/conferences/conf-11.jpg" alt="A group of colleagues at a conference exhibit hall." width="800" height="600" loading="lazy"></a><a href="assets/img/conferences/conf-12.jpg"><img src="assets/img/conferences/conf-12.jpg" alt="Adrian standing in front of a large building with red Chinese characters on the lawn." width="500" height="375" loading="lazy"></a><a href="assets/img/conferences/conf-13.jpg"><img src="assets/img/conferences/conf-13.jpg" alt="Three colleagues standing in front of a research poster." width="950" height="713" loading="lazy"></a><a href="assets/img/conferences/conf-14.jpg"><img src="assets/img/conferences/conf-14.jpg" alt="Adrian and a colleague in matching red shirts at a conference exhibit hall." width="650" height="488" loading="lazy"></a><a href="assets/img/conferences/conf-15.jpg"><img src="assets/img/conferences/conf-15.jpg" alt="Adrian and a colleague at a scenic overlook above a coastal city." width="800" height="600" loading="lazy"></a></div>
+<div class="carousel" aria-roledescription="carousel" aria-label="Conference photos">
+<div class="track" tabindex="0"><div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 15"><img src="assets/img/conferences/conf-01.jpg" alt="Adrian presenting at a podium at a conference session." width="650" height="867"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 15"><img src="assets/img/conferences/conf-02.jpg" alt="A full conference session audience watching a presentation." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 15"><img src="assets/img/conferences/conf-03.jpg" alt="Adrian standing beside his research poster." width="500" height="664" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 15"><img src="assets/img/conferences/conf-04.jpg" alt="Adrian in front of the large TRB letters at the Annual Meeting." width="650" height="490" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 15"><img src="assets/img/conferences/conf-05.jpg" alt="Adrian discussing his poster with a conference attendee." width="500" height="375" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="6 of 15"><img src="assets/img/conferences/conf-06.jpg" alt="A group of colleagues in front of the TRB letters at the Annual Meeting." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="7 of 15"><img src="assets/img/conferences/conf-07.jpg" alt="Adrian presenting the SMART Tool on stage, slide titled &#x27;How does the SMART Tool work?&#x27;." width="1100" height="625" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="8 of 15"><img src="assets/img/conferences/conf-08.jpg" alt="University of Arizona team at an exhibit booth with laptops and posters." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="9 of 15"><img src="assets/img/conferences/conf-09.jpg" alt="Adrian beside his research poster at the TRB Annual Meeting." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="10 of 15"><img src="assets/img/conferences/conf-10.jpg" alt="Four colleagues standing in front of the TRB letters." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="11 of 15"><img src="assets/img/conferences/conf-11.jpg" alt="A group of colleagues at a conference exhibit hall." width="800" height="600" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="12 of 15"><img src="assets/img/conferences/conf-12.jpg" alt="Adrian standing in front of a large building with red Chinese characters on the lawn." width="500" height="375" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="13 of 15"><img src="assets/img/conferences/conf-13.jpg" alt="Three colleagues standing in front of a research poster." width="950" height="713" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="14 of 15"><img src="assets/img/conferences/conf-14.jpg" alt="Adrian and a colleague in matching red shirts at a conference exhibit hall." width="650" height="488" loading="lazy"></div><div class="slide" role="group" aria-roledescription="slide" aria-label="15 of 15"><img src="assets/img/conferences/conf-15.jpg" alt="Adrian and a colleague at a scenic overlook above a coastal city." width="800" height="600" loading="lazy"></div></div>
+<button type="button" class="nav prev" aria-label="Previous photo">&#8249;</button>
+<button type="button" class="nav next" aria-label="Next photo">&#8250;</button>
+<div class="count" aria-live="polite">1 / 15</div>
+</div>
+<div class="thumbs"><button type="button" class="thumb" data-i="0" aria-label="Show photo 1"><img src="assets/img/conferences/conf-01.jpg" alt="" width="650" height="867" loading="lazy"></button><button type="button" class="thumb" data-i="1" aria-label="Show photo 2"><img src="assets/img/conferences/conf-02.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="2" aria-label="Show photo 3"><img src="assets/img/conferences/conf-03.jpg" alt="" width="500" height="664" loading="lazy"></button><button type="button" class="thumb" data-i="3" aria-label="Show photo 4"><img src="assets/img/conferences/conf-04.jpg" alt="" width="650" height="490" loading="lazy"></button><button type="button" class="thumb" data-i="4" aria-label="Show photo 5"><img src="assets/img/conferences/conf-05.jpg" alt="" width="500" height="375" loading="lazy"></button><button type="button" class="thumb" data-i="5" aria-label="Show photo 6"><img src="assets/img/conferences/conf-06.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="6" aria-label="Show photo 7"><img src="assets/img/conferences/conf-07.jpg" alt="" width="1100" height="625" loading="lazy"></button><button type="button" class="thumb" data-i="7" aria-label="Show photo 8"><img src="assets/img/conferences/conf-08.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="8" aria-label="Show photo 9"><img src="assets/img/conferences/conf-09.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="9" aria-label="Show photo 10"><img src="assets/img/conferences/conf-10.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="10" aria-label="Show photo 11"><img src="assets/img/conferences/conf-11.jpg" alt="" width="800" height="600" loading="lazy"></button><button type="button" class="thumb" data-i="11" aria-label="Show photo 12"><img src="assets/img/conferences/conf-12.jpg" alt="" width="500" height="375" loading="lazy"></button><button type="button" class="thumb" data-i="12" aria-label="Show photo 13"><img src="assets/img/conferences/conf-13.jpg" alt="" width="950" height="713" loading="lazy"></button><button type="button" class="thumb" data-i="13" aria-label="Show photo 14"><img src="assets/img/conferences/conf-14.jpg" alt="" width="650" height="488" loading="lazy"></button><button type="button" class="thumb" data-i="14" aria-label="Show photo 15"><img src="assets/img/conferences/conf-15.jpg" alt="" width="800" height="600" loading="lazy"></button></div>
+<script>
+(function(){
+  var c=document.querySelector('.carousel'), t=c.querySelector('.track'), n=t.children.length, cnt=c.querySelector('.count'), th=document.querySelectorAll('.thumb');
+  var idx=0;
+  function show(i){ idx=i; cnt.textContent=(i+1)+' / '+n; th.forEach(function(b,k){ b.classList.toggle('on', k===i); if(k===i) b.scrollIntoView({block:'nearest', inline:'nearest'}); }); }
+  function go(i){ i=(i+n)%n; show(i); t.scrollTo({left:i*t.clientWidth, behavior:'smooth'}); }
+  c.querySelector('.prev').onclick=function(){ go(idx-1); };
+  c.querySelector('.next').onclick=function(){ go(idx+1); };
+  th.forEach(function(b){ b.onclick=function(){ go(+b.dataset.i); }; });
+  t.addEventListener('scroll', function(){ clearTimeout(t._s); t._s=setTimeout(function(){ var i=Math.round(t.scrollLeft/t.clientWidth); if(i!==idx) show(i); }, 150); });
+  t.addEventListener('keydown', function(e){ if(e.key==='ArrowRight'){ e.preventDefault(); go(idx+1); } if(e.key==='ArrowLeft'){ e.preventDefault(); go(idx-1); } });
+  window.addEventListener('resize', function(){ t.scrollTo({left:idx*t.clientWidth}); });
+  show(0);
+})();
+</script>
 
 </main>
 <footer class="site-footer"><div class="inner">
