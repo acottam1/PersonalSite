@@ -93,3 +93,59 @@ th { color: var(--muted); font-weight: 600; font-size: .85rem; text-transform: u
   .courses th:nth-child(3), .courses td:nth-child(3) { display: none; }
   table { font-size: .9rem; }
 }
+
+/* ---- banner (from the old site's road-network header) ---- */
+.banner { background: #0b1220 url("assets/img/banner-network.jpg") center/cover no-repeat; position: relative; }
+.banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,35,64,.85), rgba(12,35,64,.35)); }
+.banner .inner { position: relative; max-width: var(--max); margin: 0 auto; padding: 3.2rem 16px 2.6rem; }
+.banner h1 { color: #fff; margin: 0; font-size: 2.3rem; }
+.banner h1::after { content: ""; display: block; width: 56px; height: 3px; background: var(--orange); margin-top: .7rem; }
+
+/* ---- about intro ---- */
+.intro { display: grid; grid-template-columns: 260px 1fr; gap: 2rem; align-items: start; }
+.intro-photo img { width: 100%; height: auto; border-radius: 10px; display: block; }
+.intro .name { margin: 0 0 .2rem; border: 0; padding: 0; font-size: 1.8rem; }
+.intro .role { color: var(--muted); margin-bottom: 1rem; }
+.buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
+.button.ghost { background: transparent; color: var(--navy); border: 2px solid var(--navy); padding: calc(.55rem - 2px) calc(1rem - 2px); }
+.button.ghost:hover { background: var(--navy); color: #fff; }
+
+/* ---- image tiles (skills, philosophy) ---- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+.tile { background: var(--soft); border-radius: 10px; overflow: hidden; }
+.tile img { width: 100%; height: 170px; object-fit: cover; display: block; }
+.tile h3 { margin: .9rem 1rem .3rem; }
+.tile p, .tile ul { margin: 0 1rem 1rem; font-size: .96rem; }
+.tile ul { padding-left: 1.1rem; }
+
+/* ---- projects with side image ---- */
+.project { display: grid; grid-template-columns: 1.3fr 1fr; gap: 1.6rem; align-items: start; margin: 1.2rem 0 1.6rem; }
+.project h3 { margin-top: .2rem; }
+.project .meta { color: var(--muted); font-size: .93rem; margin-bottom: .6rem; }
+.project-img figure { margin: 0 0 .8rem; }
+.project-img img { box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; align-items: start; }
+
+/* ---- gallery ---- */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .6rem; }
+.gallery a { display: block; border-radius: 6px; overflow: hidden; }
+.gallery img { width: 100%; height: 170px; object-fit: cover; display: block; transition: transform .2s; }
+.gallery a:hover img { transform: scale(1.04); }
+
+/* ---- embeds ---- */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.map { width: 100%; height: 280px; border: 0; border-radius: 8px; }
+.doc-frame { width: 100%; height: 85vh; border: 1px solid var(--line); border-radius: 8px; }
+.video { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 8px; background: #000; }
+.caption { font-size: .9rem; color: var(--muted); margin-top: .4rem; }
+
+@media (max-width: 720px) {
+  .intro { grid-template-columns: 1fr; }
+  .intro-photo { max-width: 240px; }
+  .project, .duo, .contact { grid-template-columns: 1fr; }
+  .banner h1 { font-size: 1.8rem; }
+  .banner .inner { padding: 2.2rem 16px 1.8rem; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery img { height: 130px; }
+}
+figure.narrow { max-width: 640px; }
