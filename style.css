@@ -198,3 +198,13 @@ figure.narrow { max-width: 640px; }
   .nav { width: 36px; height: 36px; font-size: 1.5rem; }
   .duo.even img { height: 240px; }
 }
+
+/* merged teaching page */
+.cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: .6rem; }
+.cols3 h3 { margin-top: .6rem; }
+.cols3 p { font-size: .97rem; }
+details.doc { margin: .4rem 0 1rem; border: 1px solid var(--line); border-radius: 8px; padding: .7rem 1rem; }
+details.doc summary { cursor: pointer; font-weight: 600; color: var(--navy); }
+details.doc[open] summary { margin-bottom: .8rem; }
+[id] { scroll-margin-top: 70px; }
+@media (max-width: 720px) { .cols3 { grid-template-columns: 1fr; gap: 0; } }
