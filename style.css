@@ -232,3 +232,5 @@ details.proj > summary { padding-right: 7.5rem; }
   details.proj > summary { padding-right: 2.8rem; }
   .badge { position: static; transform: none; align-self: flex-start; margin-top: .3rem; }
 }
+figure.diagram { margin: .4rem 0 .2rem; }
+figure.diagram img { border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: none; }
